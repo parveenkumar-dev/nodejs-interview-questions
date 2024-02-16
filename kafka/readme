@@ -1,0 +1,4 @@
+Run docker-compose up
+In one command line, Run docker-compose up to start the docker
+In second command line, run node ./producer.js to produce some message
+In third command line, run node ./consumer.js to retrieve produced messages.

@@ -1,0 +1,9 @@
+For graphQL server use Apollo.
+Apollo GraphQL is a framework using it we can run graphQL server.
+
+Step1 - Install & Setup Apollo server using
+https://www.apollographql.com/docs/apollo-server/
+
+Step2 - Create index.js file where you put code for starting apollo server
+
+Step3 - Define graphQL schema using typeDefs & resolvers.

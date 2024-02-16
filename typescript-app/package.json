@@ -1,0 +1,12 @@
+{
+  "name": "typescript-app",
+  "version": "1.0.0",
+  "description": "tsc --init - to generate tsconfig.json file\r tsc - compile all project files and generate .js inside /dist folder",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

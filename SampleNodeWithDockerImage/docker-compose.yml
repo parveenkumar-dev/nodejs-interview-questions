@@ -1,0 +1,25 @@
+---
+version: '3.8'
+
+services:
+  web:
+    build: ./frontend # this is where we have Dockerfile. Container will run using this Image.
+    ports:
+      - 3000:3000 # port mapping. Frontend is running on 3000 and map it with :3000 container port
+  api:
+    build: ./backend
+    ports:
+      - 5000:5000
+    environment:
+      DB_URL: mongodb://db/vidly
+    depends_on: # its depend on db, so it will make sure first db container running.
+      - db
+  db:
+    image: mongo:4.0-xenial # this is mongodb docker image
+    ports:
+      - 27017:27017
+
+volumes:
+  vidly:
+
+# when docker-compose up command will run, it will create server for all frontend, backend and db.
